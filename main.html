@@ -5,76 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
     <link rel="stylesheet" href="style.css" />
-	<style>
-		table,td,tr,th{
-			text-align:center
+	  <style>
+		table, th, td {
+			border: 1px solid black;
+			text-align:center;
 		}
-	</style>
+		</style>
   </head>
   <body>
-    <table style="width: 100%; height: 100%">
-      <!-- Your code here -->
-		<table border=1px>
-		<tr>
-			<td>
-				<table border=1px style="width:100%">
+<table style="width: 100%; height: 100%">
+	<tr >
+		<td style="padding-top:10%;padding-bottom:10%; width:50%">
+			<table  style="width: 100%;">
+					<tr><th colspan="2">Nested Table 2</th></tr>
+						<tr><th>Column 1</th> 
+							<th>Column 2</th>
+						</tr>
+						<tr><td>abc</td>
+							<td>abc</td>
+						</tr>
+			</table>
+		</td>
+		<td>
+			<table style="width: 100%;">
+				<tr><th>Nested Table 1</th></tr>
 				<tr>
-					<th colspan=2>Nested Table 2</th>
+					<td>
+						<ul><li>List item</li>
+							<li>List item</li>
+							<li>List item</li>
+						</ul>
+					</td>
+				</tr>
+			</table>	
+		</td>
+</tr>
+	<tr >
+		<td style="padding-top:5%;padding-bottom:5%;">
+			<table style="width: 100%;">
+				<tr><th colspan="2">Nested Table 3</th></tr>
+				<tr>
+					<td style="color:blue; text-decoration: underline">Nasted Table</td>
+					<td>Demo Continued</td>
+				</tr>		
+		</table>
+		</td>
+		
+		<td>
+			<table style="width: 100%;">
+				<tr>
+					<th>Nested Table 4</th>
 				</tr>
 				<tr>
-					<th>Column 1</th>
-					<th>Column 2</th>
-			   </tr>
-                <tr>
-					<td>abc</td>
-					<td>def</td>
+					<td style = "color:white; background-color: black; text-align: center">HTML</td>
 				</tr>
 			</table>
-			</td>
-			<td>
-				<table border=1px>
-					<tr>
-						<th>Nested Table 1</th>
-					</tr>
-						<tr>
-						<td>
-							<ull>
-								<li>List item</li>
-								<li>List item</li>
-								<li>List item</li>
-							</ul>
-						</td>
-						</tr>
-				
-				</table>
-			</td>
+		</td>
 		</tr>
-			
-			<tr>
-				<td>
-					<table border=1px>
-				<tr>
-					<th colspan=2>Nested Table 3</th>
-				</tr>
-				<tr>
-					<th>Nested Table</th>
-					<th>Demo Continued</th>
-				</tr>
-            </table>
-				</td>
-				<td>
-					<table border=1px>
-				<tr>
-					<th colspan=2>Nested Table 4</th>
-				</tr>
-				<tr>
-					
-					<td style="color:white;background:black" >HTML</td>
-				</tr>
-            </table>
-				</td>
-			</tr>
-			
-  </table>
+</table>
   </body>
 </html>
